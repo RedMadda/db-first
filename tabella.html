@@ -1,0 +1,19 @@
+auto;
+
+macchina_id:  primary_key BIGINT UNSIGNED AUTO_INCREMENT;
+brand: VARCHAR(50) NOT_NULL;
+anno_produzione: YEAR NOT_NULL;
+potenza: VARCHAR(25) NOT_NULL;
+lunghezza: SMALLINT UNSIGNED NULL;
+altezza: SMALLINT UNSIGNED NULL;
+ruota_scorta: TINYINT NOT_NULL;
+alimentazione: VARCHAR(20) NOT_NULL;
+numero_proprietari: TINYINT UNSIGNED NULL;
+incidenti: TINYINT UNSIGNED NULL;
+prezzo_nuova: FLOAT(7,2) UNSIGNED NULL;
+prezzo: FLOAT(7,2) UNSIGNED NOT_NULL;
+decrizione: MEDIUM-TEXT NOT_NULL;
+diponibilità: TINYINT NOT_NULL DEFAULT(0);
+immagine: VARCHAR(255) NOT_NULL UNIQUE;
+data_inserimento: TIMESTAMP NOT_NULL;
+data_aggiornamento: TIMESTAMP NOT_NULL;
